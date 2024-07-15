@@ -3508,6 +3508,7 @@ GameObject:
   - component: {fileID: 1540316128}
   - component: {fileID: 1540316127}
   - component: {fileID: 1540316130}
+  - component: {fileID: 1540316132}
   - component: {fileID: 1540316131}
   m_Layer: 0
   m_Name: Player
@@ -3579,6 +3580,10 @@ MonoBehaviour:
   inputDown: 115
   inputLeft: 97
   inputRight: 100
+  spriteRendererUp: {fileID: 78267512}
+  spriteRendererDown: {fileID: 1630600081}
+  spriteRendererLeft: {fileID: 1248788995}
+  spriteRendererRight: {fileID: 1570207295}
 --- !u!58 &1540316131
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3614,6 +3619,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.47253922
+--- !u!114 &1540316132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540316125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2e99e537ad9304fba6f65f7f85148b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 2902229208157077528, guid: a0928b7cf03208a4fa465f6f701fd969, type: 3}
+  inputKey: 32
+  bombFuseTime: 3
+  bombAmount: 1
 --- !u!1 &1570207292
 GameObject:
   m_ObjectHideFlags: 0
