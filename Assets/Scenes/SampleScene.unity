@@ -427,6 +427,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &659060524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 659060526}
+  - component: {fileID: 659060525}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &659060525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659060524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0180664ceccd97249a27b385c6d2917c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players:
+  - {fileID: 1540316125}
+  - {fileID: 1878441707}
+--- !u!4 &659060526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659060524}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &898285076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,7 +4398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 2902229208157077528, guid: a0928b7cf03208a4fa465f6f701fd969, type: 3}
-  inputKey: 32
+  inputKey: 303
   bombFuseTime: 2
   bombAmount: 2
   explosionPrefab: {fileID: -4378042147308889479, guid: 6e7e08108c445c24eb3780f43095d407, type: 3}
@@ -4375,10 +4422,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  inputUp: 119
-  inputDown: 115
-  inputLeft: 97
-  inputRight: 100
+  inputUp: 273
+  inputDown: 274
+  inputLeft: 276
+  inputRight: 275
   spriteRendererUp: {fileID: 2081837056}
   spriteRendererDown: {fileID: 478947429}
   spriteRendererLeft: {fileID: 1180161956}
@@ -4699,3 +4746,4 @@ SceneRoots:
   - {fileID: 2041473543}
   - {fileID: 1540316128}
   - {fileID: 1878441712}
+  - {fileID: 659060526}
