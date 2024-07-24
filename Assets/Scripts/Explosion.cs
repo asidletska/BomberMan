@@ -1,16 +1,21 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Explosion : MonoBehaviour
 {
     public AnimatedSprite start;
     public AnimatedSprite middle;
     public AnimatedSprite end;
-
+    public UnityEvent explosion;
     public void SetActiveRenderer(AnimatedSprite renderer)
     {
-        start.enabled = renderer == start;
-        middle.enabled = renderer == middle;
-        end.enabled = renderer == end;
+        if (explosion != null)
+        {
+            explosion.Invoke();
+            start.enabled = renderer == start;
+            middle.enabled = renderer == middle;
+            end.enabled = renderer == end;
+        }
     }
     public void SetDirection(Vector2 direction)
     {

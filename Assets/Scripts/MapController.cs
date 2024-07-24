@@ -24,7 +24,7 @@ public class MapController : MonoBehaviour
 
         if (mapDisplay != null)
         {
-           // mapDisplay.DisplayMap((Map)scriptableObjects[currentIndex]);
+           mapDisplay.DisplayMap((Map)scriptableObjects[currentIndex]);
         }
 
     }

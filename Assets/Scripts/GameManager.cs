@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject[] players;
+    public UnityEvent newRound;
 
     public void CheckWinState()
     {
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
         }
         if (aliveCount <= 1)
         {
+            newRound.Invoke();
             Invoke(nameof(NewRound), 3f);
         }
     }

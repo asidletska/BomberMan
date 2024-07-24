@@ -33,7 +33,7 @@ public class BombController : MonoBehaviour
             StartCoroutine(PlaceBomb());
         }
     }
-    private IEnumerator PlaceBomb()
+    public IEnumerator PlaceBomb()
     {
         Vector2 position = transform.position;
         position.x = Mathf.Round(position.x);

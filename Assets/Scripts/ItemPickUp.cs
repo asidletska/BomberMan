@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ItemPickUp : MonoBehaviour
 {
+
     public enum ItemType
     {
         ExtraBomb,
@@ -33,5 +34,7 @@ public class ItemPickUp : MonoBehaviour
         {
             OnItemPickUp(other.gameObject);
         }
+        
     }
+
 }

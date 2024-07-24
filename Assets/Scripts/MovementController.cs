@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.Events;
 public class MovementController : MonoBehaviour
 {
     public new Rigidbody2D rigidbody { get; private set; }
@@ -16,6 +16,9 @@ public class MovementController : MonoBehaviour
     public AnimatedSprite spriteRendererRight;
     public AnimatedSprite spriteRendererDeath;
     private AnimatedSprite activeSprite;
+
+    public UnityEvent death;
+    public UnityEvent itemPickUp;
 
     private void Awake()
     {
@@ -69,7 +72,12 @@ public class MovementController : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Explosion"))
         {
+            death.Invoke();
             DeathSequence();
+        }
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Item"))
+        {
+            itemPickUp.Invoke();
         }
     }
     private void DeathSequence()
@@ -83,7 +91,7 @@ public class MovementController : MonoBehaviour
         spriteRendererRight.enabled= false;
         spriteRendererDeath.enabled = true;
 
-        Invoke(nameof(OnDeathSequenceEnded), 1.25f);
+        Invoke(nameof(OnDeathSequenceEnded), 3f);
     }
     private void OnDeathSequenceEnded()
     {

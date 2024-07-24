@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87d904c3af285e4c97027d55f797516, type: 3}
+  m_Name: PlayVSFriend
+  m_EditorClassIdentifier: 
+  mapIndex: 1
+  mapName: PlayVsFriend
+  mapDescription: Play VS Friend
+  mapImage: {fileID: 21300000, guid: 8a66921be0bf89b4f99be3aef13fff42, type: 3}
+  sceneLoad: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}

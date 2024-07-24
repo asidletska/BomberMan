@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MenuBomberman.unity
+    guid: b26209808c7778b4dadb95d78519b9a5
+  - enabled: 1
+    path: Assets/Scenes/PlayVSFriend.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/PlayVSBot.unity
+    guid: 2ce17bdf6972fd844944a721502abe6d
+  - enabled: 1
+    path: Assets/Scenes/PlayVS Bot.unity
+    guid: 392111a3f41265441b7d9d56a0cc888c
   m_configObjects: {}
