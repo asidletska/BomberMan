@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef900e2c2c1538479cbaee3455f340f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myFx: {fileID: 155308244}
+  myFx: {fileID: 1594976721}
   clickFx: {fileID: 8300000, guid: d969622a0d3401e44afa43f7e7eb5d3e, type: 3}
 --- !u!114 &155308243
 MonoBehaviour:
@@ -865,7 +865,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1541819498}
         m_TargetAssemblyTypeName: AudioControl, Assembly-CSharp
         m_MethodName: MuteHandler
-        m_Mode: 6
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
